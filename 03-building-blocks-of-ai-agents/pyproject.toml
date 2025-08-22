@@ -6,7 +6,9 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "crewai>=0.165.1",
+    "crewai-tools[mcp]>=0.62.3",
     "dotenv>=0.9.9",
+    "mcp>=1.13.0",
     "requests>=2.32.5",
 ]
 
