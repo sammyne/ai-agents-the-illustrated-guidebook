@@ -1,8 +1,8 @@
 import os
 from typing import Type
 
-from crewai.tools import BaseTool
 from crewai import Agent, Crew, Process, Task
+from crewai.tools import BaseTool
 from pydantic import BaseModel, Field
 
 from config import Config
