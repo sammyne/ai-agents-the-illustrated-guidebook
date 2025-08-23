@@ -6,8 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "crewai>=0.165.1",
-    "crewai-tools>=0.62.3",
+    "crewai-tools[mcp]>=0.62.3",
     "mcp[cli]>=1.13.1",
     "pydantic>=2.11.7",
-    "yfinance>=0.2.65",
 ]
