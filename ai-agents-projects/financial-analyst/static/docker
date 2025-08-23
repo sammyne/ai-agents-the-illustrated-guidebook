@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# 这个脚本只是为了伪造一个假的 docker，以绕过 CrewAI 底层代码的如下 bug
+# 即使设置了 agent.code_execution_mode='unsafe'，指示用本地环境而不是 docker，Agent 的启动流程依然会检查 docker 是否可用
+
+echo "this is a fake docker"
