@@ -16,6 +16,11 @@ uv run src/server.py
 uv run src/main.py
 ```
 
+注意事项
+1. 最终会生成一个 stock_analysis.py 文件，智能体没有执行这个脚本将图画出来；
+2. 生成的脚本用到 `yfinance` 和 `matplotlib` 两个库，执行过程中智能体拉取这两个库会时不时失败。因此，本项目作弊，用 uv 将其加到
+  了 pyproject.toml。
+
 ## 温馨提示
 - crewai 包的 Agent 指定用 `unsafe`（非容器模式）执行代码时，依然会检查 docker 是否存在。本项目使用 src/hack.py 绕过这个问题。
 - 源码参考 https://github.com/patchy631/ai-engineering-hub/tree/main/financial-analyst-deepseek
