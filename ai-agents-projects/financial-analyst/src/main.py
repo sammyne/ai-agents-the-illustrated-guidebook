@@ -86,7 +86,7 @@ try:
 
         code_execution_task = Task(
             description="""Review and execute the generated Python code by code writer agent to visualize stock data and fix any errors encountered.""",
-            expected_output="A clean, working and executable Python script file (.py) for stock visualization.",
+            expected_output="A clean, working and executable Python script file (.py) for stock visualization and the SVG plotted by running the script file.",
             agent=code_execution_agent,
         )
 
